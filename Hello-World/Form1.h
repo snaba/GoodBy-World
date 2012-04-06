@@ -61,6 +61,7 @@ namespace HelloWorld {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"•\Ž¦";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// Form1
 			// 
@@ -74,6 +75,7 @@ namespace HelloWorld {
 
 		}
 #pragma endregion
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e);
 	};
 }
 
